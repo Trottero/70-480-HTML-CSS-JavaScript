@@ -1,0 +1,67 @@
+/*
+    Attribute selector
+*/
+input[required] {
+    background-color: red;
+    color: black;
+}
+
+a[href^="https"]::after {
+    content: " - This is a secure link.";
+    color: goldenrod;
+}
+
+a[href*="external"] {
+    color:red;
+}
+
+a[href$=".jobs"]::before {
+    content: "Come work at.. ";
+}
+
+a[name~="alibaba"] {
+    font-size: 20px;
+    color: black;
+}
+
+/*
+    Class selector
+*/
+.white-color-text {
+    color: white;
+}
+
+.bg-color-red {
+    background-color: red;
+}
+
+/*
+    Element selector
+*/
+form {
+    padding: 15px;
+}
+
+section {
+    background-color:aliceblue;
+}
+
+div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*
+    Other
+*/
+input::placeholder {
+    opacity: 0.4;
+    color:black;
+}
+
+#attribute-selector-purpose,
+#class-selector-purpose,
+#element-selector-purpose
+{
+    border: 1px solid black;
+}
