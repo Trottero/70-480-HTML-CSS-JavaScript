@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Positioning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .border {
+            border: 1px solid black;
+            margin: 20px;
+        }
+
+        .box-options {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            margin: 2px;
+            color: white;
+        }
+
+        div.other-display {
+            display: inline-block;
+        }
+
+        .box-brown {
+            background-color: brown;
+        }
+
+        .box-blue {
+            background-color: blue
+        }
+
+        .box-green {
+            background-color: green;
+        }
+
+        .relative {
+            position: relative;
+            top: -50px;
+            left: 500px;
+        }
+
+        .static {
+            position: static;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 150px;
+            left: 175px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <div class="border">
+            <h1>Position: Static</h1>
+            <div class="other-display box-options box-brown static"></div>
+            <div class="other-display box-options box-blue static"></div>
+            <div class="other-display box-options box-green static"></div>
+        </div>
+
+        <div class="border">
+            <h1>Position: relative</h1>
+            <div class="other-display box-options box-brown"></div>
+            <div class="other-display box-options box-blue relative"></div>
+            <div class="other-display box-options box-green"></div>
+        </div>
+
+        <div class="border fixed">
+            <h1>Position: fixed</h1>
+            <div class="other-display box-options box-brown"></div>
+            <div class="other-display box-options box-blue"></div>
+            <div class="other-display box-options box-green"></div>
+        </div>
+
+        <!-- <div class="absolute">
+            <strong>This div is position with <i>absolute</i> based on the browser.</strong>
+        </div> -->
+
+        <!-- <div style="height: 500px;" class="border relative">
+            <div class="absolute">
+                <strong>This div is position with <i>absolute</i> based on the parent.</strong>
+            </div>
+        </div> -->
+    </div>
+
+
+</body>
+
+</html>
