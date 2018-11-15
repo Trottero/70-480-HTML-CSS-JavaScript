@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      img:hover {
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      var video;
+      window.onload = function() {
+        video = document.getElementById('sampleVideo');
+      };
+      function play() {
+        video.play();
+      }
+      function pause() {
+        video.pause();
+      }
+      function back() {
+        video.currentTime -= 10;
+      }
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <video height="400" width="600" id="sampleVideo">
+            <source src="./videos/Pexels Videos 4721.mp4" type="video/mp4" />
+          </video>
+        </td>
+        <td>
+          <img id="backButton" src="./images/back.png" onclick="back();" /><br />
+          <img id="playButton" src="./images/play.png" onclick="play();" /><br />
+          <img id="PauseButton" src="./images/pause.png" onclick="pause();" /><br />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
