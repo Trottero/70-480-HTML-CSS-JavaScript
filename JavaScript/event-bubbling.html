@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="event-bubbling.js"></script>
+    <style>
+      #outer {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      #middle {
+        width: 50%;
+        height: 50%;
+        position: relative;
+        top: 25%;
+        left: 25%;
+        background-color: green;
+      }
+      #inner {
+        width: 50%;
+        height: 50%;
+        position: relative;
+        top: 25%;
+        left: 25%;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+      <h1>Event bubbling</h1>
+    <div id="outer">
+      <div id="middle"><div id="inner"></div></div>
+    </div>
+    <div id="list">
+        <ol id="eventOrder"></ol>
+    </div>
+    <button type="button" id="clearButton">Clear</button>
+  </body>
+</html>
