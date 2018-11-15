@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      window.onload = function() {
+        document.getElementById('btnHideAnElement').onclick = function() {
+          if (document.getElementById('innerDiv').style.display == 'inline') {
+            document.getElementById('innerDiv').style.display = 'none';
+          } else {
+            document.getElementById('innerDiv').style.display = 'inline';
+          }
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <div id="innerDiv" style="display: inline">
+        <p>some nice text</p>
+        <img src="../HTML5/images/orange.png"/>
+    </div>
+    <button type="button" id="btnHideAnElement">Show/Hide Element</button>
+  </body>
+</html>
