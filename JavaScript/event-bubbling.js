@@ -21,7 +21,8 @@ function outerDivClick() {
 }
 
 function middleDivClick() {
-  appendText('middle Div Clicked');
+    // return false;
+    appendText('middle Div Clicked');
 }
 
 function innerDivClick() {
