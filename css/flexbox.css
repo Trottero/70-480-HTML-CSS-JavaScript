@@ -1,0 +1,88 @@
+.flexbox-options {
+    display: flex;
+    border: 1px solid black;
+    min-height: 15px;
+}
+
+div#flexbox-default {
+    flex-direction: row;
+}
+
+div#flexbox-column-direction {
+    flex-direction: column;
+}
+
+div#flexbox-flexpack-end {
+    /*
+        flex-pack: end; is deprecated!
+    */
+    justify-content: flex-end;
+}
+
+div#flexbox-flexpack-start {
+    /*
+        flex-pack: start; is deprecated!
+    */
+    justify-content: flex-start;
+}
+
+div#flexbox-flexpack-center {
+    /*
+        flex-pack: center; is deprecated!
+    */
+    justify-content: center;
+}
+
+div#flexbox-flex > .flex-red {
+    flex: 5;
+}
+
+div#flexbox-flex > .flex-blue {
+    flex: 10;
+}
+div#flexbox-flex > .flex-green {
+    flex: 5;
+}
+
+/*
+    flex-order: <numeric value>; is deprecated!
+*/
+
+div#flexbox-flex-order > .flex-order-red {
+    order: 2;
+}
+
+div#flexbox-flex-order > .flex-order-blue {
+    order: 3;
+}
+div#flexbox-flex-order > .flex-order-green {
+    order: 1;
+}
+
+div#flexbox-flex-wrap {
+    /*
+        Shorthand version: flex-flow: row wrap;
+    */
+    flex-wrap: wrap;
+    width: 150px;
+}
+
+.box-options {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 2px;
+    color: white;
+}
+
+.box1-color {
+    background-color: red;
+}
+
+.box2-color {
+    background-color: blue;
+}
+
+.box3-color {
+    background-color: green;
+}
