@@ -6,6 +6,8 @@ $('#retrieve-data').click(function () {
     xReq.send(null);
     $('#display-data').text();
 
+
+    
     $.ajax({
         url: "https://vps.johnlokerse.nl/stub.xml",
         // optional: cache: true or false,
