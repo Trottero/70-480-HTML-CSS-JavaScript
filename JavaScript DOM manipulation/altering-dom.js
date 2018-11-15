@@ -14,5 +14,5 @@ function createArticle() {
   var outerDiv = document.getElementById('outerDiv');
   var element = document.createElement('article');
   element.innerText = 'My new <article> element';
-  outerDiv.appendChild(element);    
+  outerDiv.appendChild(element);
 }
