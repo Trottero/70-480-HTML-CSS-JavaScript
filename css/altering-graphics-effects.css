@@ -1,0 +1,50 @@
+div {
+    border: 1px solid black;
+    padding: 15px;
+    margin: 15px;
+}
+
+div#opacity > img {
+    opacity: 0;
+}
+
+div#bg-image {
+    width: 95%;
+    height: 500px;
+    background-image: url('./altering-graphics-effects.jpg');
+    /* background-repeat: no-repeat; */
+    /* background-clip: content-box; */
+}
+
+div#gradients {
+    width: 95%;
+    height: 500px;
+    background: linear-gradient(#2A4A96, white);
+    /* background: linear-gradient(to right, #2A4A96, white); */
+}
+
+div#shadows {
+    width: 80%;
+    height: 500px;
+    box-shadow: 10px 10px;
+    /* box-shadow: 10px 10px 5px; */
+    /* box-shadow: 10px 10px 5px 5px; */
+    /* box-shadow: 10px 10px 5px 5px #2A4A96; */
+    /* box-shadow: 10px 10px 5px 5px #2A4A96 inset; */
+}
+
+div#clip {
+    border: none;
+}
+
+img#clip-me {
+    /* Nieuwere syntax => CLIP is deprecated */
+    clip-path: circle(40%);
+}
+
+div#text-shadows > p {
+    width: 95%;
+    text-shadow: 1px 1px;
+    /* text-shadow: 1px 1px 2px;
+    text-shadow: 1px 1px 2px #2A4A96; */
+}
