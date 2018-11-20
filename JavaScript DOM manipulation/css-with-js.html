@@ -20,6 +20,8 @@
       }
       .trans {
         transform: scale(2);
+        /* transform: skew(2); */
+        /* transform: rotate(180); */
       }
     </style>
     <script>
@@ -27,6 +29,7 @@
         var top = document.getElementById('topText');
         var left = document.getElementById('leftText');
         var pos = document.getElementById('positioning');
+
         document.getElementById('btnPosition').onclick = function() {
           var img = document.getElementById('orange2');
           img.style.position = pos.value;
